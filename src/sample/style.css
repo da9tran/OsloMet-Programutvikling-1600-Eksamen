@@ -1,0 +1,13 @@
+AnchorPane {
+    -fx-background-color: #FFC03F;
+    -fx-background-size: stretch;
+    -fx-alignment: center;
+}
+
+#anchorPaneVisBruker {
+    -fx-background-image: none;
+}
+
+#ComboBox {
+    -fx-text-fill: white;
+}

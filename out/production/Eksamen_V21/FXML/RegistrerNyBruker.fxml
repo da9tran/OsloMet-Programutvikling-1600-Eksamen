@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="596.0" stylesheets="@../sample/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrerNyBruker">
+    <children>
+        <GridPane alignment="CENTER" layoutX="-1.0" layoutY="29.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="461.0" prefWidth="596.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="29.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="191.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="248.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="0.0" prefWidth="157.0" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints maxHeight="101.4" minHeight="10.0" prefHeight="83.79998168945312" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="101.4" minHeight="10.0" prefHeight="83.79998168945312" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="104.00001220703123" minHeight="10.0" prefHeight="71.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="110.19999999999999" minHeight="10.0" prefHeight="74.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="92.80000610351561" minHeight="10.0" prefHeight="72.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="108.00002441406252" minHeight="10.0" prefHeight="72.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="67.5" minHeight="10.0" prefHeight="58.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="52.5" minHeight="10.0" prefHeight="52.5" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="18.0" prefWidth="77.0" text="Brukernavn" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtBrukernavn" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" promptText="Brukernavn" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Verdana" size="12.0" />
+                    </font>
+                </TextField>
+                <Label prefHeight="18.0" prefWidth="66.0" text="Passord" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="104.0" text="Telefonnummer" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="99.0" text="E-postadresse" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtTlfnr" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" promptText="Telefonnummer" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Verdana" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtEpost" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" promptText="E-postadresse" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Verdana" size="12.0" />
+                    </font>
+                </TextField>
+                <CheckBox fx:id="chkKunde" mnemonicParsing="false" prefHeight="22.0" prefWidth="112.0" text="Kunde" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="chkAdmin" mnemonicParsing="false" prefHeight="15.0" prefWidth="80.0" text="Admin" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </CheckBox>
+                <Button fx:id="btnRegistrer" mnemonicParsing="false" onAction="#Btn_Registrer_OnClick" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #514E61#514E61 #514E61#514E61 #514E61#514E61 #514E61#514E61; -fx-background-radius: 10;" text="Register" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Font" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnAvbryt" mnemonicParsing="false" onAction="#Btn_Avbryt_OnClick" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #514E61#514E61 #514E61#514E61 #514E61#514E61 #514E61#514E61; -fx-background-radius: 10;" text="Avbryt" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Font" size="13.0" />
+                    </font>
+                </Button>
+                <Label text="Register ny bruker" textFill="#514e61" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="27.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets top="25.0" />
+                    </GridPane.margin>
+                </Label>
+            <ImageView fitHeight="70.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../img/png-transparent-logo-tractor-agriculture-john-deere-farm-you-may-also-like-logo-computer-wallpaper-agriculture.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPassord" maxWidth="200.0" prefHeight="30.0" prefWidth="178.0" promptText="Passord" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <Label fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="447.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="602.0" textAlignment="CENTER" AnchorPane.bottomAnchor="6.600000000000001" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-2.3999999999999773">
+            <font>
+                <Font name="Verdana Bold" size="13.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
